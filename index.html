@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aosa.css">
+    <link rel="stylesheet" href="css/prettyPhoto.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -69,22 +70,21 @@
                                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="nav-link dropdown-toggle collapsed" href="#services" id="navbarDropdown" data-toggle="collapse" aria-haspopup="true" aria-expanded="false">Services</a>
+                                        <div class="dropdown-menu collapse" id="services" aria-labelledby="navbarDropdown" data-parent="#navbarSupportedContent">
                                             <a class="dropdown-item" href="#">Action</a>
                                             <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Web Design</a>
+                                        <a class="nav-link" href="portfolio.html">Web Design</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Products</a>
+                                        <a class="nav-link" href="blog.html">Products</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="contact.html">Contact</a>
                                     </li>
                                 </ul>
                                 <div class="nav_button">
@@ -168,7 +168,7 @@
         <div class="container-md">
             <div class="row">
                 <div class="col-sm-12 col-lg-5">
-                    <div class="portfolio_content" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="portfolio_content" data-aos="fade-right" data-aos-duration="1500">
                         <h3><span>INTERNET</span> MARKETING SUCCESS STORIES</h3>
                         <p>Internet marketing can entail many different service offerings. We like to emphasize ones with extreme expertise. The respective ones are listed below.</p>
                         <a href="javascript:void(0)" class="btn_blue">View ALL PORTFOLIO</a>
@@ -220,13 +220,13 @@
             <div class="row">
                 <ul class="nav nav-tabs tab_panel_tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link" href="#tabOne" data-toggle="tab">
+                        <a class="nav-link active" href="#tabOne" data-toggle="tab">
                             <img src="images/tool.png">
                             <span>Google Maps</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#tabTwo" data-toggle="tab">
+                        <a class="nav-link" href="#tabTwo" data-toggle="tab">
                             <img src="images/ads.png">
                             <span>Google ADS</span>
                         </a>
@@ -260,11 +260,12 @@
         </div>
 
         <div class="tab-content tab_panel_body" data-aos="fade-up" data-aos-duration="1500">
-            <div id="tabOne" role="tabpanel" class="tab-pane fade" style="background-image: url('images/tabOne_bg.png');">
+
+            <div id="tabOne" role="tabpanel" class="tab-pane fade active show" style="background-image: url('images/tabOne_bg.png');">
                 <div class="container-md">
                     <div class="row">
                         <div class="col-sm-12 col-lg-6">
-                            <div class="tab_panel_body_content">
+                            <div class="tab_panel_body_content" data-aos="fade-right" data-aos-duration="1500">
                                 <h3>Google Maps</h3>
                                 <p>With 1000+ projects, 1000+ clients and 10+ years of experience in internet marketing we have truly refined our service list offering. Before we jump into details on what we can do for you let us share our story...</p>
                                 <a href="javascript:void(0)" class="btn_blue">VIEW SERVICES</a>
@@ -279,7 +280,7 @@
                     </div>
                 </div>
             </div>
-            <div id="tabTwo" role="tabpanel" class="tab-pane fade in active show" style="background-image: url('images/tabOne_bg.png');">
+            <div id="tabTwo" role="tabpanel" class="tab-pane fade in" style="background-image: url('images/tabOne_bg.png');">
                 <div class="container-md">
                     <div class="row">
                         <div class="col-sm-12 col-lg-6">
@@ -523,13 +524,13 @@
     <section class="testimonial_panel">
         <div class="container-md">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12" data-aos="fade-up" data-aos-duration="1500">
                     <h3>WE'RE READY TO GET STARTED, ARE YOU?</h3>
                     <p>OK, we understand, there are plenty of questions. Fill out the form below and one of our team members will connect with you to explain the digital marketing campaign process details. We're waiting, drop us a line!</p>
                 </div>
 
                 <div class="col-sm-12 col-lg-6">
-                    <div class="review_panel">
+                    <div class="review_panel" data-aos="fade-right" data-aos-duration="1500">
                         <h5>Join Our Award-Winning Portfolio of Clients</h5>
                         <p>with Over $75,000,000 in Venture Funding</p>
                         <div class="review_list">
@@ -766,7 +767,7 @@
  
 
     <script src="js/popper.min.js"></script>
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/prettyPhoto.min.js"></script>
     <script src="js/aos.js"></script>

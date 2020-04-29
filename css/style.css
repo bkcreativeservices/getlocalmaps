@@ -150,11 +150,43 @@ a:focus {
 .site_header .navbar-brand {
 	padding: 0;
 }
+.site_header .navbar-nav .dropdown-menu {
+	float: none;
+    display: block;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	top: 40px;
+	padding: 0;
+	border-radius: 0;
+	background-clip: border-box;
+	border: none;
+	margin: 0;
+}
+.dropdown-menu.collapse:not(.show) {
+	display: none;
+}
+/* .site_header .navbar-nav .dropdown-menu.show {
+	transform: translate(-50%, 0);
+} */
 .site_header .navbar-light .navbar-nav .nav-link {
 	font-size: 16px;
 	font-weight: 400;
 	color: #fff;
 	padding: 0 20px;
+}
+.site_header .dropdown-item {
+	padding: 6px 15px;
+}
+.site_header .dropdown-item {
+	font-size: 16px;
+    font-weight: 400;
+	color: #333;
+}
+.site_header .dropdown-item.active, 
+.site_header .dropdown-item:hover {
+	color: #fff;
+	background-color: #fe5c07;
+	outline: none;
 }
 .site_header .dropdown-toggle::after {
 	background-image: url("../images/down-arrow.png");
@@ -1203,6 +1235,14 @@ a:focus {
 	height: 300px;
 	object-fit: cover;
 	object-position: top left;
+}
+.blog_project_list.portfolio_gallery a {
+	padding: 8px;
+	outline: none;
+}
+.blog_project_list.portfolio_gallery a img {
+	box-shadow: none;
+	height: 300px;
 }
 .blog_project_list .slick-arrow {
     background-color: rgb(254, 92, 7);

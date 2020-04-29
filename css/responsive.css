@@ -87,6 +87,7 @@
         background-color: #fe5c07;
         padding: 10px;
         outline: none;
+        z-index: 99;
     }
     .site_header .navbar-toggler .navbar-icon {
         display: block;
@@ -118,15 +119,16 @@
     .site_header .navbar-collapse {
         position: absolute;
         top: 0;
-        z-index: 999;
+        z-index: 9;
         height: 100vh;
         background-color: #051e39;
-        width: 50%;
+        width: 100vw;
         transform: translateX(-1000px);
         transition: all 0.3s ease-in;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
+        align-items: flex-start;
     }
     .site_header .navbar-collapse.show {
         transform: translateX(-60px);
@@ -334,16 +336,26 @@
     .contact_sec h3 {
         font-size: 36px;
     }
+    .site_header .navbar-nav .dropdown-menu {
+        transform: translateX(20%) !important;
+        background-color: #051e39;
+        padding-bottom: 6px;
+    }
+    .site_header .navbar-nav .dropdown-menu .dropdown-item {
+        color: #fff;
+    }
 }
 
 @media (max-width: 768px) {
     .site_header .navbar-collapse.show {
         transform: translateX(-40px);
-        transition: all 0.3s ease-out;
     }
 }
 
 @media (max-width: 767px) {
+    .site_header .navbar-collapse.show {
+        transform: translateX(-15px);
+    }
     .review_list .slick-prev {
         left: 0;
     }
@@ -429,14 +441,14 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .nav_button a {
+        width: 85%;
+    }
 }
 
 @media (max-width: 568px) {
     .home_slider_panel .carousel-caption {
         bottom: 10%;
-    }
-    .site_header .navbar-collapse.show {
-        transform: translateX(-15px);
     }
     .tab_panel_body_content .btn_blue {
         margin-left: 10%;
@@ -453,9 +465,6 @@
 }
 
 @media (max-width: 480px) {
-    .site_header .navbar-collapse.show {
-        width: 75%;
-    }
     .home_slider_panel .carousel-caption {
         bottom: 0;
         display: none;
@@ -757,11 +766,8 @@
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) and (orientation:landscape) {
-    .site_header .navbar-collapse.show {
-        transform: translateX(-15px);
-    }
     .nav_button {
-        padding: 15px 35px 0;
+        padding: 25px 35px 0;
     }
     .site_header .navbar-light .navbar-nav .nav-link {
         padding: 5px 40px;
