@@ -2,6 +2,7 @@
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1200px;
     }
+    
 }
 
 @media (min-width: 1600px) {
@@ -12,6 +13,13 @@
 
 @media (max-width: 1440px) {
     
+    
+}
+@media (min-width: 1281px) and (max-width: 1300px) {
+    .btn_orange, .btn_blue {
+        padding: 0 20px !important;
+    }
+    
 }
 
 @media (max-width: 1280px) {
@@ -21,6 +29,7 @@
     .feature_card.slick-slide {
         width: 355px;
     }
+    
 }
 
 @media (max-width: 1024px) {
@@ -420,6 +429,11 @@
     .contact_sec p::after {
         width: 15%;
     }
+
+    .carousel-indicators {
+        bottom: -20px;
+        z-index: 999 !important;
+    }
 }
 
 @media (max-width: 667px) {
@@ -465,9 +479,10 @@
 }
 
 @media (max-width: 480px) {
+    
     .home_slider_panel .carousel-caption {
         bottom: 0;
-        display: none;
+        display: block;
     }
     .home_slider_panel .carousel-caption h5 {
         font-size: 16px;
@@ -498,6 +513,7 @@
     .portfolio_body {
         right: 0;
         bottom: 0;
+        transform: translate(0, 350px);
     }
     .portfolio_body_logo {
         margin-bottom: 10px;
@@ -524,9 +540,12 @@
         max-width: 95%;
         right: 0;
         left: 0;
-        bottom: 0;
+        bottom: -100px;
         margin: 0 auto 15px;
         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    }
+    .portfolio_carousel .slick-list {
+        min-height: 60vh;
     }
     .portfolio_content .btn_blue {
         max-width: 75%;

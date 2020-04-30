@@ -1529,3 +1529,6 @@ a:focus {
 .location_map {
     margin-bottom: -7px;
 }
+.feature_body {
+    margin-bottom: 40px;
+}
